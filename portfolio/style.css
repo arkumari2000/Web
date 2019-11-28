@@ -1,0 +1,103 @@
+
+/************ HEADER*****************/
+.nav_bg{
+	background-color: #28475dfa;
+}
+.brand{
+	border-radius: 5px;
+}
+@media only screen and (min-width: 1025px) {
+        .nav_list {
+            position: fixed;
+            right: 80px;
+        }
+}
+.navbar-fixed-top{
+	top: 0;
+	position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+/*********HEADER END****************/
+/************CONTENT****************/
+.heading{
+	text-align: center;
+}
+.banner_image{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(./img/background.jpg) no-repeat center center;
+    background-size: cover;
+}
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-top: 50px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #28475dfa;
+  color: white;
+  transform: rotateY(180deg);
+}
+/****************FEEDBACK********************/
+@media only screen and (min-width: 1025px) {
+     .feed{
+	margin-top: 50px;
+    border-right: dotted 1px grey;
+    margin-bottom: 50px;
+	}
+	.feed:last-child{
+		border-right: 0px;
+	}   
+}/*****************FOOTER***************/
+.foot{
+	background-color: #2b495f;
+	color: white;
+}
+.link{
+	color: white;
+}
+.link:hover{
+	color: black;
+}

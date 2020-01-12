@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration_form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!----------------------HEADER START--------------------------->
+  <div class="header">
+    <div class="container clearfix">
+          <button onclick="clickfunction()" class="toggle-button float-left">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <div id="collapse-button">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="float-left shop-div">
+            <p><small>SHOP</small></p>
+          </div>
+          <div class="float-right search-box">
+            <ion-icon name="search"></ion-icon>
+            <span><input type="text" name="search" class="input"></span>
+          </div>
+          <center>
+            <div>
+              <h5>WAVEN</h5>
+            </div>
+          </center>
+    </div>
+  </div>
+<!----------------------HEADER END--------------------------->
+
+<!---------------------- CONTENT START----------------------->
+  <div class="banner-image">
+    <center>
+        <div class="container">
+          <form name="uform" action="file.php" onsubmit="return validation()">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Name</span>
+              </div>
+              <input name="uname" type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Phone No.</span>
+              </div>
+              <input name="uphone" type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Email</span>
+              </div>
+              <input name="uemail" type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Password</span>
+              </div>
+              <input name="upassword1" type="password" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Re-Enter Password</span>
+              </div>
+              <input name="upassword2" type="password" class="form-control">
+            </div>
+            <input type="submit" value="REGISTER" class="button">
+          </form>
+        </div>
+      </center>
+  </div>
+<!-------------------------END-------------------------->
+
+<!---------------------- FOOTER START----------------------->
+<footer class="fixed-bottom">
+  <div class="container">
+    <center>
+      <small>Designed by: ARCHANA KUMARI<br>Contact: arkumari2000@gmail.com</small>
+    </center>
+  </div>
+</footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/*******************HEADER********************/
+.header{
+	padding-top: 10px;
+}
+#collapse-button{
+	display:none;
+}
+.toggle-button{
+	background-color: white;
+	border: white;
+	padding-top: 3px;
+}
+.shop-div{
+	padding-left: 20px;
+}
+.search-box{
+	margin-top: 3px;
+	padding:0px;
+	border:1px solid grey;
+	border-radius: 3px;
+	max-height: 20px;
+	max-width: 150px;
+}
+.input{
+	border:white;
+	max-height: 10px;
+	max-width: 100px;
+}
+/********************END**********************/
+
+/********************BANNER*******************/
+.banner-image{
+	text-align: center;
+	background: url(water.webp) no-repeat center center;
+    background-size: cover;
+    height: 540px;
+    margin-top: 20px;
+}
+.banner-image div{
+    max-width: 500px;
+}
+.banner-image center{
+	padding-top: 100px;
+}
+/*********************END*********************/
+
+/*********************FORM********************/
+.input-group-prepend span{
+	background-color: black;
+	color: white;
+}
+.button{
+	width: 100%;
+    background-color: red;
+    color: white;
+    border: 0.5px solid #b9e2fd;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+}
+/**********************END*******************/
+
+
+footer{
+	background-color: black;
+	padding: 3px;
+	color: white;
+}

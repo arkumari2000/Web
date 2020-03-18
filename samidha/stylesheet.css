@@ -1,0 +1,379 @@
+/* To make background transparent when login and registration form open */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+/***************HEADER START****************/
+.samidha-heading{
+    font-family: 'Courgette', cursive;
+}
+.samidha-block{
+	background-color: #D8C3A5;
+}
+.header-menu{
+	background-color: #E98074;
+}
+.menu-list{
+	list-style-type: none;
+}
+.login-button{
+	border:none;
+	background-color: white;
+}
+/* Position the Popup form */
+.login-popup {
+    position: relative;
+    width: 100%;
+}
+/* Hide the Popup form */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-45%,5%);
+    border: 1px solid #E98074;
+    z-index: 9;
+}
+#regForm{
+  	position: fixed;
+  	left: 50%;
+  	top:10%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+/* Styles for the form container */
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+}
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: grey;
+    background: #eee;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+border:1px solid #E98074;
+}
+/* Style submit/login button */
+.form-container .btn {
+    background-color: #E98074;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+/* Style cancel button */
+.form-container .cancel {
+    background-color:  #E85A4F;
+}
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/***************HEADER END*****************/
+.main-photo{
+	width: 100%;
+	height: 450px;
+    background: url(./images/samidhaphoto.jpeg) no-repeat center center;
+    background-size: cover;
+    clear: both;
+}
+.img-box{
+    margin: 2%;
+}
+.magzine-box{
+	padding: 2%;
+}
+.caption-div{
+	background-color:black;
+    opacity: 60%;
+    border-radius: 0.5%;
+}
+.carousel-caption a{
+	background-color: #E98074;
+    border-radius: 3px;
+    padding: 2%;
+    color: black;
+    opacity: 0.9;
+}
+.carousel-caption a:hover{
+	color: white;
+	background-color: #9a2832;
+	text-decoration: none;
+}
+.blog-box tr{
+	border:0.5px solid #E98074;
+}
+.blog-box h3{
+	text-align: center;
+    background-color:#8a546b;
+    margin-top: 2%;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100%;
+    color: white;
+}
+/* FOOTER */
+.footer-distributed{
+	background-color: #38111f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	margin-top: 20px;
+	padding: 40px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+/* copyright */
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center ion-icon{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	padding-top: 2px;
+}
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center ion-icon{
+		margin-left: 0;
+	}
+
+}
+
+/* Media queries for laptop screen */
+@media only screen and (min-width: 1025px) {
+		.samidha-logo-img{
+			padding-left: 150px;
+			width: 350px;
+			height: 100px;
+		}
+		.samidha-heading{
+			padding-top: 30px;
+		}
+		.mobile-menu-bar{
+			display: none;
+		}
+		.list-mobile{
+			display: none;
+		}
+		.blog-box{
+			border-left: dotted 0.5px black;
+			overflow-y: scroll;
+			height: 350px;
+		}
+}
+@media only screen and (max-width: 1200px) {
+  	.header-menu{
+  		display:none;
+  	}
+  	.list-mobile{
+		position: absolute;
+		right: 0;
+		display: block;
+		background-color:  #38111f;
+		color: white;
+		font-size: 25px;
+		width: 38px;
+		height: 38px;
+		text-align: center;
+		line-height: 42px;
+		margin: 4px 5px;
+	    vertical-align: middle;
+	    padding: 3px;
+	    border-radius: 2px;
+	} 
+	.collapse{
+		display: block;
+	}
+	.mobile-menu-bar{
+		width: 100%;
+		background-color: #38111f;
+	}
+	.mobile-menu-bar a{
+		color: white;
+	}
+	.list-mobile:hover{
+		color: black;
+	}
+	.menu-list .login-button{
+		background-color: #38101f;
+	    padding: 0;
+	    color: white;
+	}
+}
+/* Media queries for mobile screen */
+@media only screen and (max-width: 766px) {
+	.header-menu{
+		display: none;
+	}
+	.list-mobile{
+		position: absolute;
+		right: 0;
+	}
+	.blog-box{
+			overflow-y: scroll;
+			height: 350px;
+		}
+	.samidha-logo{
+		width: fit-content;
+	}
+	.samidha-logo img{
+		width:50px;
+		height: 50px;
+	}
+	.samidha-heading{
+		position: absolute !important;
+		top: 0.5%; 
+	}
+}

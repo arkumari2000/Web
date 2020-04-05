@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html class="no-js " lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>G. B. PANT GOVERNMENT ENGINEERING COLLEGE</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+	<style>
+	.modal {
+    top: 2%;
+    margin: -20px auto;
+	overflow-y:auto;
+}
+
+.modal-backdrop.in {
+    opacity: 0.6;
+    background: url(images/pattern.png) repeat center center rgba(0, 0, 0, 1);
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding: 15px;
+    background-color: black;
+}
+
+.modal-content {
+    background-clip: padding-box;
+    background-color: white;
+    border: 0;
+	color:black;
+    border-radius: 6px;
+    box-shadow: none !important;
+    outline: 0 none;
+    position: relative;
+    max-height: 430px;
+    overflow: auto;
+}
+
+.modal .close {
+    font-size: 13px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 14px;
+    top: 27px;
+    width: 40px;
+    z-index: 111;
+    transform: rotate(315deg);
+}
+
+.close,
+.close:focus,
+.close:hover {
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.modal .form-control {
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    font-family: 'Droid Serif', sans-serif;
+    box-shadow: none;
+    color: #555;
+    display: block;
+    font-size: 16px;
+    line-height: 1.42857;
+    font-style: italic;
+    padding: 6px 12px;
+    width: 100%;
+    border-bottom: 4px solid #222;
+    height: 70px;
+    padding-left: 0;
+}
+
+
+
+	.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+@media only screen and (min-width: 1025px){
+/* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width:33.33%;
+    display: none; /* Hide all elements by default */
+  }
+}
+.column{
+  display: none;
+}
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn1 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #ea414f;
+  color:black;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: black;
+  color:white;
+}
+
+.btn1.active {
+  background-color: black;
+  color: white;
+}
+
+.tab {
+  border: 1px solid #ccc;
+  background-color: #ea414f;
+}
+
+
+	
+	</style>
+
+</head>
+<body> 
+    
+    <?php include("header.php"); ?>
+
+
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tagline-message page-title text-center">
+						<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gb nopadtop">
+            <div class="container">
+                <div class="boxed">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="content blog-list">
+                                    <div class="blog-meta">
+                                        <h3><center>COLLEGE ACTIVITIES</center></h3>
+										
+										<br>
+										
+                                    </div>
+									<div class="blog-desc-big">
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home" onclick="filterSelection('all')">All</a></li>
+    <li><a data-toggle="tab" href="#menu1" onclick="filterSelection('edu')">Educational/Workshops</a></li>
+    <li><a data-toggle="tab" href="#menu2" onclick="filterSelection('tech')">Technical</a></li>
+    <li><a data-toggle="tab" href="#menu3" onclick="filterSelection('sports')">Sports</a></li>
+    <li><a data-toggle="tab" href="#menu4" onclick="filterSelection('cultural')">Cultural</a></li>
+    <li><a data-toggle="tab" href="#menu5" onclick="filterSelection('misc')">Miscellaneous</a></li>
+  </ul>
+<div class="tab-content">
+<div class="col-md-12">
+<div class="col-md-4 column sports">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal" style="background-color:white; ">
+<center><img src="images/activities/sports1.jpg" align=middle alt="" class="img-responsive" style="width:220px; height:200px; padding:0;">
+<h4><b>FORTIUS</b><br>
+<small>Intra College Sports Fest </small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">FORTIUS
+		<br><small>Intra College Sports Fest </small></h3>
+    <div style="float: right; top: 0; position: absolute; right: 10px;" >
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><input id="Button1" type="button" value="Fortius 2017" onclick="switchVisible('butt');"/></li>
+        <li><input id="Button2" type="button" value="Fortius 2018" onclick="switchVisible('butt2');"/></li>
+        <li><a href="#">FORTIOUS 2019</a></li>
+      </ul>
+    </div>
+    </div>
+
+<div class="col-md-12 modal-content" id="Div1">
+		<div class="col-md-6">
+	  <br>
+        <img src="images/activities/fortius2019_1.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+		<div class="col-md-6">
+		<br>
+        <img src="images/activities/fortius2019_4.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+		<h5 style="color:black;">Fortius is a Latin word which means Faster, Higher and Stronger. This is the Intra College Sports Fest organised every year by the Sports council. The aim of this event is to bring all the students of different stream to come altogether on single platform, perform and show their competence in different sports. The FORTIUS 2019 was conducted from 1st-3rd, February, 2019. Glimpses of this event are as follows:</h5>
+		<br>
+	  <div class="col-md-6">
+        <img src="images/activities/fortius2019_2.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"><br></div>
+		<div class="col-md-6">
+        <img src="images/activities/fortius2019_3.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></div>
+<br>
+		</div>
+<div class="col-md-12 modal-content" id="Div2" style="display: none;">
+    <div class="col-md-6">
+        <img src="images/activities/fortius2019_4.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+    <h5 style="color:black;">Fortius is a Latin word which means Faster, Higher and Stronger. This is the Intra College Sports Fest organised every year by the Sports council. The aim of this event is to bring all the students of different stream to come altogether on single platform, perform and show their competence in different sports. The FORTIUS 2019 was conducted from 1st-3rd, February, 2019. Glimpses of this event are as follows:</h5>
+    <br>
+    <div class="col-md-6">
+        <img src="images/activities/fortius2019_2.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"><br></div>
+    <div class="col-md-6">
+        <img src="images/activities/fortius2019_3.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></div>
+<br>
+    </div>
+    <div class="col-md-12 modal-content" id="Div3" style="display:none;">
+    <h5 style="color:black;">Fortius is a Latin word which means Faster, Higher and Stronger. This is the Intra College Sports Fest organised every year by the Sports council. The aim of this event is to bring all the students of different stream to come altogether on single platform, perform and show their competence in different sports. The FORTIUS 2019 was conducted from 1st-3rd, February, 2019. Glimpses of this event are as follows:</h5>
+    <br>
+    <div class="col-md-6">
+        <img src="images/activities/fortius2019_2.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"><br></div>
+    <div class="col-md-6">
+        <img src="images/activities/fortius2019_3.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></div>
+<br>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 column sports">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal1" style="background-color:white; ">
+<center><img src="images/activities/sport2.jpg" align=middle alt="" class="img-responsive" style="width:250px; height:200px; padding:0;">
+<h4><b>AARAMBH</b><br>
+<small>Inter College Sports Fest </small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">AARAMBH
+		<br><small>Inter College Sports Fest </small></h3>
+    <div style="float: right; top: 0; position: absolute; right: 10px;">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">AARAMBH 2017</a></li>
+        <li><a href="#">AARAMBH 2018</a></li>
+        <li><a href="#">AARAMBH 2019</a></li>
+      </ul>
+    </div>
+    </div>
+	  <div class="col-md-12 modal-content">
+	  <div class="col-md-6">
+	  <br>
+        <img src="images/activities/sport3.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:170px; padding:0;"><br></div>
+		<div class="col-md-6">
+		<br>
+        <img src="images/activities/sport4.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:170px; padding:0;"><br></div>
+
+		<h5 style="color:black;">It was felt by the Sports Council in 2018 that an event of state level in Union territory of Delhi must be organised in our campus so that students of GBPEC can interact and compete with other state champions and performers. The event was named as AARAMBH. This was an Inter college competition, which was held from 29-31st, March 2019. Shri Girraj Singh (Chairman of Para Athletics, India) and Ms.Deepika Dhiman(International Karate Champion)graced the occasion and officially started the ‘Aarambh 2019’. Over 50+ institutes from Delhi – NCR participated in this event and cash prizes of ₹ 60,000+ was distributed along with medals and trophies. Glimpses of this event are as follows:</h5>
+		<br>
+	  <div class="col-md-6">
+        <img src="images/activities/sport5.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:170px; padding:0;"><br></div>
+		<div class="col-md-6">
+        <img src="images/activities/sport6.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:170px; padding:0;"></div>
+<br>
+		</div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 column sports">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal4" style="background-color:white; ">
+<center><img src="images/activities/act1.jpg" align=middle alt="" class="img-responsive" style="width:250px; height:200px; padding:0;">
+<h4><b>GO-KART CHAMPIONSHIP</b><br>
+<small>SAE India Karting Championship</small></center>
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">GO-KART CHAMPIONSHIP
+    <br><small>SAE India Karting Championship</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+
+    <h5 style="color:black;">The students of MAE, GBPEC participated in the GO-Kart Championship 2019 held at Lovely Professional University, Phagwara, Jalandhar, Punjab.</h5>
+    <br>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="col-md-4 column tech">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal2" style="background-color:white; ">
+<center><img src="images/activities/tech1.jpg" align=middle alt="" class="img-responsive" style="width:250px; height:200px; padding:0;">
+<h4><b>INCEPTUM</b><br>
+<small>Inter College Technical Fest </small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">INCEPTUM
+    <br><small>Inter College Technical Fest </small></h3>
+
+    <div style="float: right; top: 0; position: absolute; right: 10px;">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">INCEPTUM 2017</a></li>
+        <li><a href="#">INCEPTUM 2018</a></li>
+        <li><a href="#">INCEPTUM 2019</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="col-md-12 modal-content">
+    <div class="col-md-6">
+    <br>
+        <img src="images/activities/Inceptum18_1.JPG" align=middle alt="" class="img-responsive" style="width:280px; height:170px; padding:0;"><br></div>
+    <div class="col-md-6">
+    <br>
+        <img src="images/activities/Inceptum18_2.JPG" align=middle alt="" class="img-responsive" style="width:280px; height:170px; padding:0;"><br></div>
+
+
+    <h5 style="color:black;">INCEPTUM is an Inter College Technical Fest. This event is conducted annually. INCEP-TUM 2018 was organized by INCEPTUM Team. Mr.Rohit Anand was the chairperson of the INCEPTUM Committee. Dr.Smriti Agarwal , Dr.Anu Saini and Mr.Jayant Supale were the members of the Organising team. This event was held on 3rd and 5th October 2018. The main motto of this event is to encourage the students of different stream to show their creativity and to perform technical knowledge based task. The students of vari-ous college has shown their interest towards this kind of competition and they have ac-tively participated.</h5>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 column tech">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal10" style="background-color:white; ">
+<center><img src="images/activities/IEEE.jpeg" align=middle alt="" class="img-responsive" style="width:300px; height:220px; padding:0;">
+<h4><b>IEEE</b><br>
+<small>A Technical Society of college</small></center>
+
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">IEEE
+    <br><small>A Technical Society of College</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+
+    <h5 style="color:black;">About Us
+Established in the year 2014, IEEE-GBPEC began its current journey in October of 2018, after witnessing a quick revival by the efforts of its brilliant members, and has since then only looked forward to a better and brighter future - for itself, for its members, and for the institution it proudly represents, G. B. Pant Govt. Engg. College.<br><b>• WHAT IS IEEE-GBPEC?</b><br>IEEE-GBPEC is the Student Branch Chapter of the world’s largest technical professional organization, Institute of Electrical and Electronics Engineers, falling under the jurisdiction of the Delhi Section of the same, established in G. B. Pant Govt. Engineering College.<br><b>• WHY IEEE-GBPEC?</b><br>The Chapter was established for the purpose of spreading a keen interest of all things technology among the institution’s students, giving a platform to said interest, and generally work towards the welfare of the institute, in whatever form viable and possible.<br><b>• STRUCTURE</b><br>The Chapter is a well-structered organization, with a core team comprising of capable and brilliant individuals to lead and guide the Chapter to greater heights, members full of enthusiasm and potential,  and Counselors and Faculty Advisors with astute understanding, and impeccable wisdom. The core team comprises of the Chairperson, the Vice-Chair, the Treasurer, the Web and Graphics Head, the Promotion and Events Head, and the Public Relations Head.</h5>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+</div>
+</div>
+<div class="col-md-4 column tech">
+    <button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal14" style="background-color:white; ">
+<center><img src="images/activities/Ecell.jpeg" align=middle alt="" class="img-responsive" style="width:300px; height:220px; padding:0;">
+<h4><b>ECELL</b><br>
+<small>Entrepreneurship Cell of G.B.P.E.C</small></center>
+
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">ECELL
+    <br><small>Entrepreneurship Cell of G.B.P.E.C</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+  <br>
+  <center><img src="images/activities/Ecell2.jpeg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></center>
+  <br>
+
+    <h5 style="color:black;">E-CELL,G.B.P.E.C.  is the <b>entrepreneurship cell of G.B Pant Govt. Engineering College</b> established under the guidelines of PM YUVA. The cell was established by Mr. Himanshu Tripathi in 2018 . E-CELL,Gbpec  had conducted various activities like Group discussions ,Mock Interview, H.R interaction. Along with this,cell has conducted all the activities and coursework of PM YUVA 's entrepreneurship course by the help of Dr. Mamta Mittal & Dr. Krishna Singh (course facilitator,PM YUVA). E-CELL GBPEC has collaborated with entrepreneurial society of various colleges across Delhi-NCR like D.T.U , G.G.S.I.P.U.<br>Cell has aided all its member and non member in participating in all the events across the state .<br>E-Cell GBPEC helped in organizing first ever TEDx Talk of our college. The core team members of the cell were the prominent members of the organising committee.</h5>
+    <br>
+        <div class="col-md-6">
+        <img src="images/activities/Ecell1.jpeg" align=middle alt="" class="img-responsive" style="width:350px; height:170px; padding:0;"><br></div>
+    <div class="col-md-6">
+        <img src="images/activities/Ecell3.jpeg" align=middle alt="" class="img-responsive" style="width:350px; height:170px; padding:0;"></div>
+<br>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+ <div class="col-md-4 column edu">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal6" style="background-color:white; ">
+<center><img src="images/activities/iccm2018_3.jpg" align=middle alt="" class="img-responsive" style="width:220px; height:180px; padding:0;">
+<h4><b>ICCM</b><br>
+<small>International Conference of Computers<br>and Management</small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">ICCM
+		<br><small>International Conference of Computers and Management</small></h3>
+    <div style="float: right; top: 0; position: absolute; right: 10px;">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">ICCM 2018</a></li>
+        <li><a href="#">ICCM 2019</a></li>
+      </ul>
+    </div>
+      </div>
+	  <div class="col-md-12 modal-content">
+	  <div class="col-md-6">
+	  <br>
+        <img src="images/activities/iccm2018_1.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+		<div class="col-md-6">
+		<br>
+        <img src="images/activities/iccm2018_2.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+
+
+		<h5 style="color:black;">ICCM 2018 has been organized on 22-23 Dec 2018 at G B Pant Govt. Engineering College Delhi Okhla Phase 3 New Delhi. The conference inaugura-tion was scheduled on 22 Dec 2018 (Saturday) at 11:00 AM. Shri Deveder Singh, IAS, Commissioner-cum-secretary, DTTE was chief guest and Prof. (Dr.) Yogesh Singh, Vice Chan-cellor, Delhi Technological University was Guest of Honour at Inauguration Ceremony. In the Inauguration ceremony Prof. R. K Agarwal, JNU, has delivered the keynote address on Machine Learning and Deep Learning. Over the two days span a total of 65 papers were presented in the conference in two parallel sessions. Papers entitles “Operational Floating Current Conveyor Based TAM and TIM Shadow Filter” and paper entitled “Multifunctional HQD with drowsy detection and fog elimination mechanism” were selected for best papers by session chairs.
+</h5>
+		<br>
+
+        <center><img src="images/activities/iccm2018_4.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:220px; padding:0;"><br></center>
+<br>
+		</div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+</div>
+</div>
+  
+<div class="col-md-4 column edu">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal7" style="background-color:white; ">
+<center><img src="images/activities/FEAST-1.jpg" align=middle alt="" class="img-responsive" style="width:250px; height:200px; padding:0;">
+<h4><b>FEAST</b><br>
+<small>Two day Workshop on Finite <br>Element Analysis of Structures</small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">FEAST
+		<br><small>Two day Workshop on Finite Element Analysis of Structures</small></h3>
+      </div>
+	  
+<div class="col-md-12 modal-content">
+
+		<h5 style="color:black;">Two days Workshop on Finite Element Analysis of Structures FEASTSMT scheduled on 20th & 21st August, 2018 was organized by Department of Mechanical & Automation Engineering, G.B. Pant Government Engineering College, Okhla, New Delhi in association with Vikram Sarabhai space center ISRO & industry partner SVR InfoTech, Pune. During the duration several technical as well as hands on sessions were organized on technology which is very user friendly because of which it has been widely expected & adopted in industry. Not only the faculties of G.B. Pant Engineering College participated but faculty members from the other nearby colleges also participated in thisevent with a great enthusi-asm. The event started on 20th Sept with inaugural speech by Principal, G.B. Pant Engineering College Prof. O.P. Verma following with exhaustive technical sessions and hands on practice to the participants. There was an overwhelming response from faculty members of nearby engineering colleges as large number of faculty and research scholar turned for participation in this event. The event was headed by HOD, MAE Dr. Ajay K.S. Singholi along with event coordinatorsDr. Anurag Dixit and Mr. Dayanidhi Krishana Pathak.</h5>
+		<br>
+        <center><img src="images/activities/FEAST-1.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></center>
+<br>
+		</div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+</div>
+</div>
+  
+<div class="col-md-4 column edu">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal8" style="background-color:white; ">
+<center><img src="images/activities/short.jpg" align=middle alt="" class="img-responsive" style="width:250px; height:220px; padding:0;">
+<h4><b>SHORT TERM COURSE</b><br>
+<small>CMOS Analog Design(One Week Course)</small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">SHORT TERM COURSE
+		<br><small>CMOS Analog Design(One Week Course)</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+
+		<h5 style="color:black;">One week short term course (Sponsored by NITTTR Chandigarh) on CMOS Analog Design (Through ICT) from 4th-8th February, 2019 organised by National Institute of Technical Teachers Training and Research, Chandigarh. It was conducted by Department of Electronics and Communication Engineering, GB Pant Govt. Engineering College.</h5>
+		</div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="col-md-4 column cultural">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal3" style="background-color:white; ">
+<center><img src="images/activities/bun1.jpg" align=middle alt="" class="img-responsive" style="width:260px; height:200px; padding:0;">
+<h4><b>BUNIYAAD</b><br>
+<small>Theatre Society of GBPEC</small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">BUNIYAAD
+    <br><small>Theatre Society of GBPEC</small></h3>
+      </div>
+    <div class="col-md-12 modal-content">
+    <div class="col-md-6">
+    <br>
+        <img src="images/activities/bun2.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+    <div class="col-md-6">
+    <br>
+        <img src="images/activities/bun3.jpg" align=middle alt="" class="img-responsive" style="width:280px; height:190px; padding:0;"><br></div>
+
+
+    <h5 style="color:black;">BUNIYAAD is the theatre society of GB Pant Engineering college. The society was established in 2013 by Mr. Ritwik Mishra with few students. In 2016, the team was not too much active in DUTC (Delhi University Theatre Circuit) but was consistent with their annual productions. Along with this, the teammates were introduced to various physical and vocal exercises which helped them build their skills. Through street plays, the society has voiced out various topics like the educational system of our country, regional disputes, peer pressure, waste segregation etc. and depicted theatre discipline through stage plays based on stories from Anton Chekov, PremChand, Sahir and Amrita Pritam, and few self-written plots. In 2018-19, new ways to carry out theatre workshops based on physical strength, mental exercises, audience awareness, performance perspectives were introduced, regular theatre workshops were conducted within the college campus. The stage play “Ek Mulakaat’ bagged the first position in PGDAV(Eve.) College and Ms. Priya Sharma, ECE 2nd year got the Best Actor (Female) award for the same. With each year the society has reached new heights and made the voices of each production echoed in various campuses over the state. The society is presently active in DUTC (Delhi University Theatre Circuit), colleges of GGSIPU and other private colleges in and around state.
+ 
+
+</h5>
+    <br>
+        <center><img src="images/activities/bun4.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></center>
+<br>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 column edu">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal9" style="background-color:white; ">
+<center><img src="images/activities/nss.jpg" align=middle alt="" class="img-responsive" style="width:300px; height:220px; padding:0;">
+<h4><b>NSS</b><br>
+<small>NSS Campus Activities</small></center>
+
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">NSS
+    <br><small>NSS Campus Activities</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+
+    <h5 style="color:black;">The NSS unit of the college has been hosting various events like Computer Literacy Programme for Economically Weaker Sections, Cleanliness Drives, Road Safety Campaign, Blood Donation Camps, International Yoga Day, Tree Plantation, etc. in which students volunteer for selfless service and learn showing consideration towards other people in the society. Their efforts towards collecting contributions for Armed Forces Flag Funds, Indian Association for Blind, etc. have been highly appreciated by these organizations.</h5>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+</div>
+</div>
+<div class="col-md-4 column cultural">
+    <button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal12" style="background-color:white; ">
+<center><img src="images/activities/abhilasha.jpeg" align=middle alt="" class="img-responsive" style="width:300px; height:220px; padding:0;">
+<h4><b>ABHILASHA</b><br>
+<small>Art Society</small></center>
+
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">ABHILASHA
+    <br><small>Art SOciety</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+  <br>
+  <center><img src="images/activities/abhilasha1.jpeg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></center>
+  <br>
+
+
+    <h5 style="color:black;">“Art and love are the same thing: It's the process of seeing yourself in things that are not you.”<br><b>About us:</b><br> Established in September, 2017 considered as first Art Society of GBPEC . Founded by Shubham Gautam (current President), Priya Chawla (current Vice President), Pritika Rana (current General Secretary).<br><b>ABHILASHA -</b><br> THE FINE ART SOCIETY OF GBPEC provides platform to students who have a great passion in art, craft and photography by giving them opportunity to improve their skills and grow professionally.
+We believe in working with all as one. The main purpose of this society is to let students compete among others and develop best version of themselves.<br><b>Achievements-</b><br>Here a glimpse of achievements by abhilasha 2017-18.<br>1st prize in poster making competition in ndim Manthan'18:-Laxmi Meena, ece 3rd yr, Mukul Rawat, cse 3rd yr<br>Organizing and decorating college events like riwayat'18  farewell'18.<br>2018-19<br>2nd prize in poster making competition:-Sushmita,cse 2nd yr<br>3rd Position at GBPEC, inceptum, Nov 2019 :Ammar ece 1st yr<br>Organizing and decorating college events.<br>4th Position at Pulse 2k19 in origami-Shubham Gaur</h5>
+    <br>
+        <div class="col-md-6">
+        <img src="images/activities/abhilasha3.jpeg" align=middle alt="" class="img-responsive" style="width:350px; height:170px; padding:0;"><br></div>
+    <div class="col-md-6">
+        <img src="images/activities/abhilasha2.jpeg" align=middle alt="" class="img-responsive" style="width:350px; height:170px; padding:0;"></div>
+<br>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+  <div class="col-md-4 column tech">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal5" style="background-color:white; ">
+<center><img src="images/activities/sih.jpg" align=middle alt="" class="img-responsive" style="width:300px; height:200px; padding:0;">
+<h4><b>SMART INDIA HACKATHON</b><br>
+<small>Digital Technology Innovation Competition</small></center>
+
+                                </h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">SMART INDIA HACKATHON
+    <br><small>Digital Technology Innovation Competition</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+
+    <h5 style="color:black;">Smart India Hackathon, SIH, is an initiative by AICTE, Ministry of HRD, Govt. of India and it involves 1 Lakh+ technical students, 3000+ technical institutions, 200+ organizations from across India.<br>
+<br>
+This hackathon consisted of 3 rounds:
+<br>
+1) Technology Students across India submitted their solutions to various problems submitted by ministries and private organizations.
+<br>
+2) Based on the credibility, originality and crea-tivity of their ideas, teams were shortlisted for the next round, where they had to submit a video of the working prototype of their solutions.<br>
+3)  Based on the videos, competent teams were qualified to the Grand Finale of SIH 2019, to make the prototype amidst industry mentors.
+<br>
+Only around 250 teams were selected at national level finale and the details about the institute team which was selected for the grand finale of SIH 2019, hardware edition are as follows:<br> 
+<u>Problem Statement</u>: Intelligent Trip Management for Electric Vehicle<br> <u>Organization</u>: Tata Motors <br>
+<u>Team Members</u>:<br>
+1. Manavi Shukla  
+&nbsp;&nbsp;2. Mandeep Singh Burdak<br>
+3. Aman Singh Chauhan &nbsp;&nbsp;4. Avshesh Kumar
+</h5>
+    </div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+</div>
+</div>
+	
+	<div class="col-md-4 column misc">
+		<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal13" style="background-color:white; ">
+<center><img src="images/activities/TedxGbpec.jpeg" align=middle alt="" class="img-responsive" style="width:300px; height:220px; padding:0;">
+<h4><b>TEDxGBPEC</b><br>
+<small>A TEDx Event organised by GBPEC</small></center>
+
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">TEDxGBPEC
+		<br><small>A TEDx Event organised by GBPEC</small></h3>
+    <div style="float: right; top: 0; position: absolute; right: 10px;">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">TEDxGBPEC 2018</a></li>
+        <li><a href="#">TEDxGBPEC 2019</a></li>
+      </ul>
+    </div>
+      </div>
+<div class="col-md-12 modal-content">
+
+		<h5 style="color:black;">TED is an acronym for Technology, Entertainment and Design, which
+    collectively brings the enthusiasts from the three diverse fields under the same
+    roof. It is a global movement focused on bringing meaningful change to the
+    world, for our better shared future.<br>TEDx, is an initiative by the TED Conference, a non-profit organization,
+    devoted to fulfil the motto of “ideas worth spreading”.
+    TEDxGBPEC is a licensed, independent extension of the TED platform,
+    brought to the life, by a group of enthusiasts, from G.B. Pant Engineering
+    College.<br>At the event, professional and student delegates, gather to hear the best ideas
+    bubbling in their communities. The talks spark an excellent communication
+    amongst the listeners, which are presented by curated speakers from diverse
+    domains. Hence, it is a program for curiosity and scepticism to inculcate critical
+    thinking and evoke inspiration.<br>The event talks, are recorded and videos are posted on the TED’s official
+    YouTube Channel and website TED.com, and are freely available, to
+    individuals around the globe.</h5>
+		</div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+</div>
+</div> 
+<div class="col-md-4 column misc">
+<button type="button" class="btn btn-danger w3-thumbnail" data-toggle="modal" data-target="#basicExampleModal11" style="background-color:white; ">
+<center><img src="images/activities/samidha.jpeg" align=middle alt="" class="img-responsive" style="width:300px; height:220px; padding:0;">
+<h4><b>SAMIDHA</b><br>
+<small>NPO for Teaching</small></center>
+
+</h4>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;">SAMIDHA
+    <br><small>NPO for Teaching</small></h3>
+      </div>
+<div class="col-md-12 modal-content">
+  <center><img src="images/activities/samidha2.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></center><br>
+
+    <h5 style="color:black;">Samidha is a GBPEC based society that aims to provide education to underprivileged (in terms of opportunity and finance) children from nearby areas. It was founded in the year 2013 and it has continued to foster the foundations of becoming a wonderful learning hub for students to learn more on a daily basis.<br>The teachers of Samidha are all college affiliated students,but an interesting thing is that it gives opportunities to people outside of the campus to come and teach.<br>We have a wonderful community of teachers and students and we are growing stronger in numbers every year. Our volunteers teach and learn at the same time, revel in a childhood long forgotten and re-strengthen their basics of subjects. Samidha is a very active society. We operate 5 days a week, from 4 p.m. to 5.15  p.m.<br><b>Casual things we do on sunny days apart from learning in classrooms:-</b><br>#1 Make bookmarks and rakhi with leftover materials from college fests<br>#2 Play interesting games like pictionary<br>#3 Solve quizzes to win at treasure hunt<br>#4 Sketch caricatures of our members<br>#5 Learn interesting things about specific fields of study, like astronomy, botany, photography, gender, fine arts, etc<br>#6 Play basketball, chupan chupai, ice water or just run like mad dogs<br>Samidha produces its own half-yearly magazine with interesting insights to what we do along with creative pieces done by your beloved students.<br>We have our own annual, tiny but homely fest called the Dandelion where we conduct lots of games and fun events. Samidha takes yearly responsibility of celebrating Independence and Republic day where our students manage the whole event on their OWN, from anchoring to performing stunning dances, speeches and dramas to even making beautiful rangolis!<br>Our alumni network is very strong, so strong that the freshmen can be seen sipping chai with the founder of Samidha on some days. Our students love us and we love them. We are each others’ reasons to smile at the end of every day. Happy Samidha-ing!</h5>
+    
+    <br>
+        <center><img src="images/activities/samidha1.jpg" align=middle alt="" class="img-responsive" style="width:350px; height:250px; padding:0;"></center>
+<br>
+</div>
+
+      <div class="modal-footer" style="background-color:black;">
+        <button type="button" class="btn btn-danger" style="margin:10px;" data-dismiss="modal">Close</button>
+      </div>
+
+  </div>
+</div>
+</div>
+</div>
+ 
+	
+	
+
+
+			
+			
+			
+			</div>
+			</div>
+			</div>
+			</div>
+        </section>
+		
+		
+		
+		
+
+        
+        <footer class="section footer">
+           <?php include("footer.php"); ?>
+        </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/videobg.js"></script>
+	
+	
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", " ");
+    this.className = " active";
+  });
+}
+
+function switchVisible(id){
+  var x= id;
+  if(x=="butt"){
+      document.getElementById('Div1').style.display = 'none';
+      document.getElementById('Div2').style.display = 'block';  
+      document.getElementById('Div3').Style.display = 'none';
+  }
+  else if(x=="butt2"){
+      document.getElementById('Div1').style.display = 'none';
+      document.getElementById('Div3').style.display = 'block'; 
+      document.getElementById('Div2').Style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
